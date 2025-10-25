@@ -1,6 +1,6 @@
 #!/bin/sh
   
-while ! curl -s http://localhost:4566/_localstack/health | grep -q '"sns": "running"'; do
+while ! curl -s http://localhost:4567/_localstack/health | grep -q '"sns": "running"'; do
     echo "Waiting for LocalStack to be healthy..."
     sleep 5
 done
